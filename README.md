@@ -9,7 +9,7 @@
 ## 🚀 Features
 - **Post-Quantum Secure**: Resists Shor's algorithm and quantum attacks (Entropy >15.91, QBER <2%).
 - **Neural Cryptosystem**: Alice (encoder), Bob (decoder) with ResBlocks, Hadamard gates, and Chaos layers.
-- **Full GUI**: Encrypt/Decrypt tabs with UTF-8/Emoji support, Base64/JSON export.
+- **Full GUI**: Encrypt/Decrypt tabs withBase64/JSON export.
 - **Eve-Resistant**: Adversarial training ensures Eve's accuracy ≤40%.
 - **Easy Integration**: Load/save JSON, copy to clipboard, file import/export.
 - **Cross-Platform**: Windows/macOS/Linux via PyTorch + CustomTkinter.
