@@ -1,4 +1,4 @@
-# ECLIPSERA™ - Quantum Neural Cryptosystem v9 GOD MODE
+# ECLIPSERA™ - Quantum Neural Cryptosystem v9
 
 [![GitHub stars](https://img.shields.io/github/stars/ivan4154_4/Eclipsera?style=social)](https://github.com/ivan4154_4/Eclipsera)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
