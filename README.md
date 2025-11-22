@@ -21,6 +21,6 @@
 ## 📦 Installation
 ```bash
 git clone https://github.com/Rin449/eclipsera-quantum-crypto.git
-cd /eclipsera-quantum-crypto
+cd eclipsera-quantum-crypto
 pip install -r requirements.txt
 python eclipsera.py
