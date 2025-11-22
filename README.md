@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 
-**Eclipsera™** is a revolutionary post-quantum encryption tool powered by neural networks and quantum-inspired algorithms. Built on V9 GOD MODE architecture, it provides unbreakable security against quantum threats using AI-driven encryption/decryption.
+**Eclipsera™** is a revolutionary post-quantum encryption tool powered by neural networks and quantum-inspired algorithms. Built on V9 architecture, it provides unbreakable security against quantum threats using AI-driven encryption/decryption.
 
 ## 🚀 Features
 - **Post-Quantum Secure**: Resists Shor's algorithm and quantum attacks (Entropy >15.91, QBER <2%).
