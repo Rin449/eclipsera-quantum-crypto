@@ -47,14 +47,6 @@ Built with **PyTorch + CustomTkinter**, inspired by **quantum neural networks (Q
 
 ---
 
-## Architecture (Inspired, Not Quantum)
-
-```text
-Alice:  msg + key + basis → [ResBlocks + Hadamard + Chaos] → cipher
-Bob:   cipher + key + basis → [Transformer-like] → msg
-Eve:   cipher only → [Weak net + 80% dropout] → guess (fails)
-
----
 
 ## 📦 Installation
 
@@ -63,3 +55,12 @@ git clone https://github.com/Rin449/eclipsera-quantum-crypto.git
 cd eclipsera-quantum-crypto
 pip install -r requirements.txt
 python eclipsera.py
+
+---
+
+## Architecture (Inspired, Not Quantum)
+
+```text
+Alice:  msg + key + basis → [ResBlocks + Hadamard + Chaos] → cipher
+Bob:   cipher + key + basis → [Transformer-like] → msg
+Eve:   cipher only → [Weak net + 80% dropout] → guess (fails)
