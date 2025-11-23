@@ -4,19 +4,55 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 
-**Eclipsera™** is a revolutionary post-quantum encryption tool powered by neural networks and quantum-inspired algorithms. Built on V9 architecture, it provides unbreakable security against quantum threats using AI-driven encryption/decryption.
+> **Warning: NOT a post-quantum cryptosystem**  
+> This is an **experimental neural cryptosystem** using adversarial training (Alice-Bob vs Eve).  
+> It is **NOT resistant to Shor's or Grover's algorithms** and should **NOT be used for real-world security**.
 
-## 🚀 Features
-- **Post-Quantum Secure**: Resists Shor's algorithm and quantum attacks (Entropy >15.91, QBER <2%).
-- **Neural Cryptosystem**: Alice (encoder), Bob (decoder) with ResBlocks, Hadamard gates, and Chaos layers.
-- **Full GUI**: Encrypt/Decrypt tabs withBase64/JSON export.
-- **Eve-Resistant**: Adversarial training ensures Eve's accuracy ≤40%.
-- **Easy Integration**: Load/save JSON, copy to clipboard, file import/export.
-- **Cross-Platform**: Windows/macOS/Linux via PyTorch + CustomTkinter.
+---
 
-## 🛠️ Quick
-1. **Encrypt**: Enter message → Get JSON with ciphertext + key.
-2. **Decrypt**: Paste Base64 ciphertext/key or load JSON → Instant recovery.
+## What is Eclipsera™?
+
+A **GUI-based neural encryption tool** that demonstrates:
+- **Adversarial training** in cryptography: Alice & Bob cooperate, Eve tries to eavesdrop.
+- **High entropy ciphertext** (~15.9 bits/16-bit block).
+- **Low QBER** (~1.5%) for legitimate receiver (Bob).
+- **Eve limited to ~40% accuracy** via dropout, noise injection, and penalty terms.
+
+Built with **PyTorch + CustomTkinter**, inspired by **quantum neural networks (QNN)** and **chaos theory** — but **runs on classical hardware**.
+
+---
+
+## Features
+
+| Feature | Description |
+|-------|-----------|
+| **GUI Encrypt/Decrypt** | Full UTF-8, emoji, Vietnamese support |
+| **Base64 + JSON Export** | Copy-paste ready for API integration |
+| **Adversarial Security** | Eve trained to fail (≤40% accuracy) |
+| **High Entropy** | Ciphertext near-uniform (≥15.9/16 bits) |
+| **Fast Inference** | <1s per 1KB on CPU |
+
+---
+
+## Security Reality Check
+
+| Claim | Reality |
+|------|--------|
+| "Post-quantum secure" | **False** – No mathematical proof, no lattice/Hash-based crypto |
+| "Resists Shor's algorithm" | **False** – Runs on classical NN, breakable by key recovery |
+| "Quantum-inspired" | **True** – Uses Hadamard-like layers, phase gates, chaos |
+| "Eve can't decrypt" | **True in model** – But only because Eve is **weak by design** |
+
+> **Use Case**: Educational, research, red-teaming AI crypto, demo of GAN-like training in security.
+
+---
+
+## Architecture (Inspired, Not Quantum)
+
+```text
+Alice:  msg + key + basis → [ResBlocks + Hadamard + Chaos] → cipher
+Bob:   cipher + key + basis → [Transformer-like] → msg
+Eve:   cipher only → [Weak net + 80% dropout] → guess (fails)
 
 ## 📦 Installation
 ```bash
