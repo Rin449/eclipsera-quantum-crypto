@@ -54,6 +54,8 @@ Alice:  msg + key + basis → [ResBlocks + Hadamard + Chaos] → cipher
 Bob:   cipher + key + basis → [Transformer-like] → msg
 Eve:   cipher only → [Weak net + 80% dropout] → guess (fails)
 
+---
+
 ## 📦 Installation
 ```bash
 git clone https://github.com/Rin449/eclipsera-quantum-crypto.git
